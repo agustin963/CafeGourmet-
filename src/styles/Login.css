@@ -1,0 +1,118 @@
+.login-container {
+  background: linear-gradient(135deg, #3e2c1c, #b59e6a);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* FORM BOX */
+.box {
+  background: #fffaf0;
+  padding: 40px 35px;
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* TITLE */
+.title {
+  font-family: "Kristi", cursive;
+  text-align: center;
+  font-size: 46px;
+  color: #3e2c1c;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #d2b38f;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #8b6a3e;
+  box-shadow: 0 0 8px rgba(139, 106, 62, 0.3);
+  outline: none;
+}
+
+.password-box {
+  position: relative;
+}
+
+.toggle-pass {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* CAPTCHA */
+.captcha-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.captcha-text {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 3px;
+  background: #e6d0b3;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #8b6a3e;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+button:hover {
+  background: #6f5231;
+}
+
+/* MESSAGE */
+.message {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.error {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.success {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.link {
+  text-align: center;
+  margin-top: 15px;
+  color: #6f5231;
+  font-weight: bold;
+  cursor: pointer;
+}
