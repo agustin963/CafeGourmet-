@@ -121,11 +121,11 @@ function Menu() {
             Limpiar filtros
           </button>
         </div>
-        <div class = "btn btnMenu active">Todo</div>
-            <div class="btn btnComidas">Comidas</div>
-            <div class="btn btnBebidas">Bebidas</div>
-            <div class="btn btnPostres">Postres</div>
-            <div class="btn btnOfertas">Ofertas</div>
+        <div className="btn btnMenu active">Todo</div>
+        <div className="btn btnComidas">Comidas</div>
+        <div className="btn btnBebidas">Bebidas</div>
+        <div className="btn btnPostres">Postres</div>
+        <div className="btn btnOfertas">Ofertas</div>
 
         <div className="buscador">
           <input

@@ -1,31 +1,31 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar";
-import Breadcrum from './components/breadcrum';
-import Home from './pages/home';
-import Menu from './pages/menu';
-import Nosotros from './pages/nosotros';
-import Login from './components/login';
-function App() {
-  
+import Layout from "./components/layout";
+import Home from "./pages/home";
+import Menu from "./pages/menu";
+import Nosotros from "./pages/nosotros";
+import Login from "./components/login";
+import Register from "./components/register";
 
+function App() {
   return (
-      <Router>
-        <Navbar />
-        <Breadcrum />
-      
-        <Routes>
+    <Router>
+      <Routes>
+
+        {/*  Rutas con Navbar y Breadcrum */}
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-        <Route path="/menu" element={<Menu />} />
+          <Route path="/menu" element={<Menu />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/contacto" element={<div>Contacto</div>} />
-        </Routes>
-      </Router>
- 
-    
-      
-  )
+        </Route>
+
+        {/*  Rutas sin Layout */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

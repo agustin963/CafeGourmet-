@@ -31,11 +31,11 @@ function Navbar() {
         </Link>
       </div>
 
-      <div class="carritooo">
-      <a href="404.html">
-        <i class="fa-solid fa-cart-shopping carrito"></i>
-      </a>
-    </div>
+      <div className="carritooo">
+        <Link to="/carrito" className="carrito">
+          🛒
+        </Link>
+      </div>
     </nav>
   );
 }

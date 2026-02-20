@@ -1,0 +1,167 @@
+.register-container {
+    background: linear-gradient(135deg, #3e2c1c, #b59e6a);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* FORM BOX */
+.box{
+    background: #fffaf0;
+    padding: 40px 35px;
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.box:hover{
+    transform: translateY(-5px);
+}
+
+/* TITLE */
+.title{
+    font-family: 'Kristi', cursive;
+    text-align: center;
+    font-size: 46px;
+    color: #3e2c1c;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* INPUTS */
+input{
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #d2b38f;
+    font-size: 15px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus{
+    border-color: #8b6a3e;
+    box-shadow: 0 0 8px rgba(139, 106, 62, 0.3);
+    outline: none;
+}
+
+/* PASSWORD BOX */
+.password-box{
+    position: relative;
+}
+
+.toggle-pass{
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #8b6a3e;
+    font-size: 18px;
+}
+
+/* PASSWORD STRENGTH */
+.strength{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.weak{ color:#b53b3b; }
+.medium{ color:#c98c2e; }
+.strong{ color:#3a7a3a; }
+
+/* BUTTON */
+button{
+    width: 100%;
+    padding: 14px;
+    background: #8b6a3e;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+button:hover{
+    background: #6f5231;
+    box-shadow: 0 7px 15px rgba(0,0,0,0.3);
+}
+
+/* CAPTCHA BOX */
+.captcha-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.captcha-text{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    background: #e6d0b3;
+    padding: 8px 14px;
+    border-radius: 10px;
+    user-select: none;
+    font-family: monospace;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+.captcha-text:hover{
+    transform: scale(1.05);
+}
+
+.captcha-box button{
+    width: 45px;
+    padding: 8px;
+    background: #d2a679;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.captcha-box button:hover{
+    background: #b9825c;
+}
+
+/* MESSAGE BOX */
+.message{
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    display: none;
+    text-align: center;
+}
+
+.error{
+    background:#f8d7da;
+    color:#842029;
+}
+
+.success{
+    background:#d1e7dd;
+    color:#0f5132;
+}
+
+/* LINK */
+.link{
+    text-align:center;
+    margin-top:15px;
+    color:#6f5231;
+    font-weight:bold;
+    cursor:pointer;
+    transition: color 0.3s;
+}
+.link:hover{
+    color:#3e2c1c;
+}
